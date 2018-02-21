@@ -4,7 +4,7 @@ class GameController < ApplicationController
     session[:counter] ||= 1
 
     @randomNumber = session[:random]
-    @guess = params[:guess].to_i
+    @guess = params[:numberStuff].to_i
     @result = ""
     @counter = session[:counter]
     @name = cookies[:name]

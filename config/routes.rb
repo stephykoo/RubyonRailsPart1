@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get '/game' => 'game#try'
-  get '/game/:guess' => 'game#try'
+  # get '/game/:number' => 'game#try'
   get '/new_game' => 'game#reset'
   get '/username/:name' => 'game#username'
+  get '/check_password' => 'password#check'
+
 end
 
 #The path is created by the developer. Basically, it can be whatever you want it to be.
